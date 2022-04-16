@@ -8,7 +8,7 @@ namespace NUnitTesting
         {
             Console.WriteLine("----------Welcome To N Unit Testing Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Displaying Day Of Week\n2.Temperature Conversion\n3.End The Program");
+            Console.WriteLine("\n1.Displaying Day Of Week\n2.Temperature Conversion\n3.Monthly Payment\n4.End The Program");
             while (finish)
             {
                 Console.Write("\nEnter an option to execute :");
@@ -25,6 +25,10 @@ namespace NUnitTesting
                         temp.FtoC();
                         break;
                     case 3:
+                        MonthlyPayment pay = new MonthlyPayment();
+                        pay.Payment();
+                        break;
+                    case 4:
                         finish = false;
                         break;
 
