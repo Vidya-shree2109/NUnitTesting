@@ -8,7 +8,7 @@ namespace NUnitTesting
         {
             Console.WriteLine("----------Welcome To N Unit Testing Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Displaying Day Of Week\n2.Temperature Conversion\n3.Monthly Payment\n4.End The Program");
+            Console.WriteLine("\n1.Displaying Day Of Week\n2.Temperature Conversion\n3.Monthly Payment\n4.Vending Machine\n5.End The Program");
             while (finish)
             {
                 Console.Write("\nEnter an option to execute :");
@@ -29,6 +29,10 @@ namespace NUnitTesting
                         pay.Payment();
                         break;
                     case 4:
+                        VendingMachine note = new VendingMachine();
+                        note.NumberOfNotes();
+                        break;
+                    case 5:
                         finish = false;
                         break;
 
